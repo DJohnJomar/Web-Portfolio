@@ -1,0 +1,76 @@
+.sr-only {
+    position: absolute;    /* Take the element out of the flow */
+    width: 1px;            /* Make the element effectively tiny */
+    height: 1px;           /* Ensure it doesn’t take up space */
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;      /* Prevent the content from being visible */
+    clip: rect(0, 0, 0, 0);/* Completely clip the element from view */
+    white-space: nowrap;   /* Prevent the text from wrapping */
+    border: 0;
+}
+
+.my-10{
+    margin: 10rem 0 10rem 0 ;
+}
+
+.text-neon-green{
+    color: #39FF14;
+}
+
+.indented{
+    text-indent: 20px;
+}
+.justified{
+    text-align: justify;
+}
+
+
+
+
+/* for Mobile s (inpection mode small mobile size)devices */
+@media(min-width:320px){
+ .text-homepage{
+    font-size: 1.3rem;
+ }
+}
+
+/* for Mobile L (inpection mode large mobile size)devices */
+@media(min-width:425px){
+    .text-homepage{
+        font-size: 1.5rem;
+     }
+    p,a{
+        font-size:1.3rem;
+    }
+}
+
+/* for small(sm) devices */
+@media(min-width:576px){
+ 
+}
+
+/* for medium(md) devices */
+@media(min-width:768px){
+    .text-homepage{
+        font-size: 1.75rem;
+     }
+    p, a{
+        font-size:1.3rem;
+    }
+}
+
+/* for large(lg) devices */
+@media(min-width:992px){
+
+}
+
+/* for extra large(xl) devices */
+@media(min-width:1200px){
+
+}
+
+/* for extra extra large(xxl) devices */
+@media(min-width:1400px){
+
+}
