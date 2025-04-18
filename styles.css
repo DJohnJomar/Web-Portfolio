@@ -64,11 +64,14 @@ h1, h2, h3{
   font-family: var(--space-mono);
   font-weight: bold;
   text-align: center;
+  color:var(--darker-text)
 }
 
 p{
-  font-family: var(--bitter);
+  font-family: var(--space-mono);
   text-align: center;
+  color:var(--darker-text);
+  line-height: 27px;
 }
 
 h1{
@@ -142,6 +145,21 @@ section, .floating, #hero div{
 }
 .floating h2{
   margin-bottom:30px;
+}
+
+
+.project{
+  width:300px;
+  height: 215px;
+  background-size:contain;
+  border-radius: 30px;
+  margin:40px;
+}
+#ld{
+  background-image: url("images/project-ld.jpg");
+}
+#condiplant{
+  background-image:url("images/project-condiplant.jpg");
 }
 
 @media(min-width:425px){
