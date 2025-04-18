@@ -5,3 +5,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+:root{
+--dark-bg: #463C21;
+--darker-text: #3F2D21;
+--white: #EFEDE7;
+--darker-white: #E5E3DC;
+--space-mono: "Space Mono", monospace;
+}
+
+body{
+    background-color: var(--white);
+}
