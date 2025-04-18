@@ -1,3 +1,4 @@
+/* Reset */
 *,
 *::before,
 *::after {
@@ -6,29 +7,42 @@
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+/* Fonts */
 .space-mono-regular {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.bitter-regular {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
   
-  .space-mono-bold {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .space-mono-regular-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .space-mono-bold-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
   
 
 :root{
@@ -36,9 +50,77 @@
 --darker-text: #3F2D21;
 --white: #EFEDE7;
 --darker-white: #E5E3DC;
+--orangey: #CFA576;
 --space-mono: "Space Mono", monospace;
+--bitter: "Bitter", serif; 
+
 }
 
 body{
-    background-color: var(--white);
+  background-color: var(--white);
+}
+
+h1, h2, h3{
+  font-family: var(--space-mono);
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+  font-family: var(--bitter);
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size:25px;
+}
+
+p{
+  font-size:18px;
+}
+
+section, .floating, #hero div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  margin:100px 0;
+  position:relative;
+}
+
+
+.highlight{
+  color:var(--orangey);
+}
+#hero{
+  height:100vh;
+  justify-content: space-between;
+}
+#portrait{
+  border-radius: 50%;
+  box-shadow: 0px 5px 4px 5px #00000040;
+  margin-top:50px;
+}
+#design{
+  width:100%;
+  position:relative;
+  bottom:0px;
+}
+
+@media(min-width:425px){
+
+}
+@media(min-width:768px){
+  
+}
+@media(min-width:1024px){
+  
 }
