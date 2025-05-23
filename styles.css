@@ -123,10 +123,19 @@ section{
   width:clamp(250px, 30vw, 325px);
   height:auto;
 }
-#design{
+
+/* #design{
   width:clamp(375px, 70vw, 500px);
   position:absolute;
   bottom:0px;
+} */
+
+#design {
+  width: clamp(200px, 70vw, 400px);
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .dark-accent{
